@@ -2,6 +2,7 @@
 author: Carlo
 title: "Fabbricando case "
 date: 2026-07-03T10:00:00.000+03:00
+cover: /assets/uploads/img_6681.jpeg
 soundtrack: https://open.spotify.com/track/37vEGupkvoa5kIbLkoY6h9?si=4n0fy4WARvOh4EFopMhAOg
 ---
 Oggi si inizia per bene!
