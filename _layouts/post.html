@@ -45,8 +45,9 @@ layout: default
   {% if page.gallery and page.gallery.size > 0 %}
   <div class="gallery">
     {% for item in page.gallery %}
-    <a href="{{ item.image | relative_url }}">
-      <img src="{{ item.image | relative_url }}" alt="" loading="lazy">
+    {% assign img = item.image | default: item %}
+    <a href="{{ img | relative_url }}">
+      <img src="{{ img | relative_url }}" alt="" loading="lazy">
     </a>
     {% endfor %}
   </div>

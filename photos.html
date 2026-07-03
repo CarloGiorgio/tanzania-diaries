@@ -29,9 +29,10 @@ permalink: /photos/
     </figure>
     {% endif %}
     {% for item in post.gallery %}
+    {% assign img = item.image | default: item %}
     <figure class="photo-card">
-      <a href="{{ item.image | relative_url }}">
-        <img src="{{ item.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
+      <a href="{{ img | relative_url }}">
+        <img src="{{ img | relative_url }}" alt="{{ post.title }}" loading="lazy">
       </a>
       <figcaption>
         {% if post.author %}<span class="badge badge-{{ post.author | slugify }}">{{ post.author }}</span>{% endif %}
