@@ -1,7 +1,8 @@
-name: Compress images
+name: Resize & compress images
 
-# Runs after you publish a post with photos. Shrinks any new/changed
-# images in assets/uploads so the site loads fast on slow mobile data.
+# Runs after a post with photos is published. Full-res phone photos
+# (~4032px, 1-2 MB) are far bigger than the site ever shows, so we cap
+# them at 1600px wide and re-encode at quality 80 for fast mobile loads.
 on:
   push:
     branches: [master]
@@ -12,17 +13,35 @@ permissions:
   contents: write
 
 jobs:
-  compress:
+  resize:
     runs-on: ubuntu-latest
+    # Skip the run triggered by this job's own commit (prevents a loop).
+    if: github.actor != 'github-actions[bot]'
     steps:
       - uses: actions/checkout@v4
-      - name: Compress images
-        uses: calibreapp/image-actions@main
-        with:
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
-          compressOnly: true
-          # Resize huge phone photos down to a sensible web width
-          jpegQuality: "80"
-          pngQuality: "80"
-          webpQuality: "80"
-          ignorePaths: "node_modules/**"
+
+      - name: Install ImageMagick
+        run: sudo apt-get update && sudo apt-get install -y imagemagick
+
+      - name: Resize oversized images
+        run: |
+          # Only touch images wider than 1600px; leave already-web-sized ones alone.
+          find assets/uploads -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' \) | while read -r img; do
+            width=$(identify -format '%w' "$img" 2>/dev/null | head -1)
+            if [ -n "$width" ] && [ "$width" -gt 1600 ]; then
+              echo "Resizing $img ($width px)"
+              mogrify -resize '1600x1600>' -quality 80 -strip "$img"
+            fi
+          done
+
+      - name: Commit resized images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet; then
+            git add assets/uploads
+            git commit -m "Auto-resize uploaded images for web"
+            git push
+          else
+            echo "No oversized images to resize."
+          fi
