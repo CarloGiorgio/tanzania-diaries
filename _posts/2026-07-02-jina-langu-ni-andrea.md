@@ -2,6 +2,8 @@
 author: Andrea
 title: Jina langu ni Andrea
 date: 2026-07-02T21:11:00.000+03:00
+gallery:
+  - /assets/uploads/a96473e6-8eca-43b7-a065-7b5d1d3029bf.jpeg
 ---
 Decisione presa, si impara lo swahili tra duolinguo, le chiacchiere con la gente del posto e James il coordinatore a cui rompo le balle ogni 10 minuti.
 
