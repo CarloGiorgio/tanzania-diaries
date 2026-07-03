@@ -18,6 +18,7 @@
     <nav class="site-nav">
       <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>All days</a>
       <a href="{{ '/this-week/' | relative_url }}"{% if page.nav_id == 'week' %} class="active"{% endif %}>This week</a>
+      <a href="{{ '/photos/' | relative_url }}"{% if page.nav_id == 'photos' %} class="active"{% endif %}>Photos</a>
       <a class="nav-carlo" href="{{ '/carlo/' | relative_url }}"{% if page.nav_id == 'carlo' %} class="active"{% endif %}>Carlo</a>
       <a class="nav-andrea" href="{{ '/andrea/' | relative_url }}"{% if page.nav_id == 'andrea' %} class="active"{% endif %}>Andrea</a>
     </nav>

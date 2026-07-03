@@ -1,0 +1,47 @@
+---
+layout: default
+title: Photos
+nav_id: photos
+permalink: /photos/
+---
+<h1 class="author-title">Photo gallery</h1>
+<p class="week-range">Every photo from the trip — who took it and which day.</p>
+
+{% comment %} Build a flat list of "cover" + gallery photos across all posts. {% endcomment %}
+{% assign has_photos = false %}
+{% for post in site.posts %}
+  {% if post.cover or post.gallery.size > 0 %}{% assign has_photos = true %}{% endif %}
+{% endfor %}
+
+{% if has_photos %}
+<div class="photo-grid">
+  {% for post in site.posts %}
+    {% if post.cover %}
+    <figure class="photo-card">
+      <a href="{{ post.url | relative_url }}">
+        <img src="{{ post.cover | relative_url }}" alt="{{ post.title }}" loading="lazy">
+      </a>
+      <figcaption>
+        {% if post.author %}<span class="badge badge-{{ post.author | slugify }}">{{ post.author }}</span>{% endif %}
+        <a class="photo-day" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <span class="photo-date">{{ post.date | date: "%-d %B %Y" }}</span>
+      </figcaption>
+    </figure>
+    {% endif %}
+    {% for item in post.gallery %}
+    <figure class="photo-card">
+      <a href="{{ item.image | relative_url }}">
+        <img src="{{ item.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
+      </a>
+      <figcaption>
+        {% if post.author %}<span class="badge badge-{{ post.author | slugify }}">{{ post.author }}</span>{% endif %}
+        <a class="photo-day" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <span class="photo-date">{{ post.date | date: "%-d %B %Y" }}</span>
+      </figcaption>
+    </figure>
+    {% endfor %}
+  {% endfor %}
+</div>
+{% else %}
+<p class="empty">No photos yet. <a href="{{ '/admin/' | relative_url }}">Add one to a post →</a></p>
+{% endif %}
