@@ -13,6 +13,26 @@ layout: default
   <img class="post-cover" src="{{ page.cover | relative_url }}" alt="{{ page.title }}" loading="lazy">
   {% endif %}
 
+  {% if page.soundtrack %}
+  <div class="soundtrack">
+    {% if page.soundtrack contains "open.spotify.com" %}
+      {% assign sp_embed = page.soundtrack | replace: "open.spotify.com/", "open.spotify.com/embed/" | split: "?" | first %}
+      <iframe class="soundtrack-spotify" src="{{ sp_embed }}" width="100%" height="152" frameborder="0" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    {% elsif page.soundtrack contains "youtu" %}
+      {% if page.soundtrack contains "watch?v=" %}
+        {% assign yt_id = page.soundtrack | split: "watch?v=" | last | split: "&" | first %}
+      {% elsif page.soundtrack contains "youtu.be/" %}
+        {% assign yt_id = page.soundtrack | split: "youtu.be/" | last | split: "?" | first %}
+      {% endif %}
+      {% if yt_id %}
+      <iframe class="soundtrack-yt" src="https://www.youtube.com/embed/{{ yt_id }}" title="Soundtrack" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      {% endif %}
+    {% else %}
+      <a class="soundtrack-link" href="{{ page.soundtrack }}" target="_blank" rel="noopener">🎵 Soundtrack of the day</a>
+    {% endif %}
+  </div>
+  {% endif %}
+
   <nav class="toc post-toc" id="post-toc" hidden aria-label="In this post">
     <h2 class="section-heading">In this post</h2>
     <ol class="toc-list"></ol>

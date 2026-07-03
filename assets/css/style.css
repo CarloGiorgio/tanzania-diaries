@@ -247,6 +247,20 @@ a { color: var(--accent); }
   .gallery { grid-template-columns: repeat(3, 1fr); }
 }
 
+/* Soundtrack embed */
+.soundtrack { margin: 20px 0; }
+.soundtrack-spotify { border-radius: 12px; display: block; }
+.soundtrack-yt { width: 100%; aspect-ratio: 16 / 9; border-radius: 12px; display: block; }
+.soundtrack-link {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #1db954;
+  color: #fff;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 /* Photo gallery page */
 .photo-grid {
   display: grid;

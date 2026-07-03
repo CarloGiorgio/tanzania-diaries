@@ -33,6 +33,7 @@ collections:
       - { label: "Date", name: "date", widget: "datetime", default: "" }
       - { label: "Location", name: "location", widget: "string", required: false, hint: "e.g. Arusha, Tanzania" }
       - { label: "Cover photo", name: "cover", widget: "image", required: false, hint: "Big photo at the top" }
+      - { label: "Soundtrack", name: "soundtrack", widget: "string", required: false, hint: "Paste a Spotify or YouTube link — plays at the top of the note" }
       - { label: "Story", name: "body", widget: "markdown", hint: "Write your day here" }
       - label: "Photo gallery"
         name: "gallery"
