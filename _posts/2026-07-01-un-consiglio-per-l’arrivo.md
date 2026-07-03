@@ -2,7 +2,7 @@
 author: Carlo
 title: Un consiglio per l’arrivo
 date: 2026-07-01T20:45:00.000+03:00
-cover: /tanzania-diaries/assets/uploads/img_6670.jpeg
+cover: /assets/uploads/img_6670.jpeg
 ---
 Siamo arrivati!
 

@@ -7,7 +7,7 @@ backend:
 
 # Where uploaded photos are stored / how they're referenced on the site
 media_folder: "assets/uploads"
-public_folder: "/tanzania-diaries/assets/uploads"
+public_folder: "/assets/uploads"
 
 # Save drafts as you go without publishing live
 publish_mode: editorial_workflow
