@@ -2,7 +2,7 @@
 author: Andrea
 title: Fundi mzuri hujenga msingi imara
 date: 2026-07-03T09:24:00.000+03:00
-cover: /assets/uploads/1000109713.jpg
+cover: /assets/uploads/1000109809.jpg
 soundtrack: https://open.spotify.com/track/1q8gelFgFYUwoWpQV7WNCe?si=LIepcXYzQjCTfoxz0m_NUA
 ---
 "Il buon artigiano costruisce fondamenta forti"
