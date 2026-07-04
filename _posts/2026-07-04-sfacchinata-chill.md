@@ -2,6 +2,9 @@
 author: Carlo
 title: Sfacchinata chill
 date: 2026-07-04T20:59:00.000+03:00
+location: https://open.spotify.com/track/7Aw5qQy9zeg9ZGtsOQAcQA?si=ruFv8hJHQq2P2vBzCvbtwg
+gallery:
+  - /assets/uploads/img_6687.jpeg
 ---
 Il risveglio non è stato uno dei più floridi. La sera prima io e Silvio dopo una faticosa giornata decidiamo di uscire e andare a un locale, il “Via Via”, abbastanza vicino al centro. Andrea era “cucinato” quindi è rimasto a casa a dormire. Il locale è carino, fatto da diverse aree ristoro e una tettoia dove c’era musica. L’ambiente era puramente internazionale; c’erano tanti bianchi. Prima che arrivassimo io e Andrea ad Arusha, Silvio ha avuto modo di conoscere persone che facevano volontariato ma con un’associazione molto grande, con circa 70 persone attive. Rispetto a noi mi è parso di capire che hanno un po’ più di tempo libero, diversi contatti con altri volontari, anche in zone diverse, e a eventi sociali. La serata passa in tranquillità, godendo di compagnia e musica decente. C’era pure la possibilità di fare karaoke ma per fortuna è stata rimossa come cosa. Non credo di essere mai stato così vicino nel compiere un omicidio quanto quella sera quando una ragazza **NON** italiana, **NON** italiano parlante, ha deciso di cantare “Bella Ciao”, sbagliando pronuncia e inventando parole. Grazie *Casa di Carta* per aver risvegliato questo mio istinto omicida.
 
