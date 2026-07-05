@@ -1,0 +1,21 @@
+---
+author: Carlo
+title: Viaggio verso ovest - parte uno
+date: 2026-07-05T21:38:00.000+03:00
+cover: /assets/uploads/img_9673.jpeg
+---
+Oggi facciamo la prima gita. Accompagnati da James e il suo bolide, un Land Rover da battaglia, io, Andrea e il socio Silvio ci avventuriamo per la scoperta delle dimensioni limitrofe. La prima destinazione è il villaggio dei Massai. Per raggiungere il loro posto, facciamo un viaggio di un’ora e mezza. La maggior parte per strada, comoda e ora che mi sono abituato, abbastanza prevedibile. L’ultima parte invece è su sterrato spinto ché se avesse guidato uno di noi tre probabilmente ci saremmo cappottati alla prima curva. Il panorama ha cambiato completamente faccia, mostrando un panorama da steppa. Erba abbastanza alta, gialla perché secca e alberi abbastanza rasi, secchi, con poche foglie e molte spine se presenti. La fauna è molto ridotta, principalmente uccelli, abbastanza variopinti e stranamente tutti corridori, non zappettanti come i piccioni. Lungo il tragitto vediamo anche diversi abitanti dei villaggi che portano al pascolo mucche e capre, altre che invece che con asini trasportano roba per il mercato della settimana.
+
+Finito il viaggio sulle montagne russe, veniamo accolti da questa tribù Masai. 
+
+All’uscita dalla macchina si presenta la guida del giorno, un amico di James nonché insegnante del villaggio, e diversi abitanti, molte donne e bambini. Gli adulti indossano un vestito fatto di diversi lembi che avvolgono dalle gambe al busto e le braccia. Le donne hanno anche un ornamento al collo molto importante, nonché gioielli e orecchini colorati. Ci si saluta stringendo la mano ma i bambini invece porgono la loro testa per farsi imporre la mano.
+
+Ci mostrano quindi le case fatte di fango e legna, anguste ma funzionali, come conservano il cibo, facendoci anche assaggiare del porridge. La loro società gira attorno alla famiglia e al pascolo. Questo è così importante che il recinto è costruito al centro del villaggio e le case tutte attorno. Gli uomini possono avere più mogli e avere molti figli è simbolo di uno status di ricchezza. Un padre in media ha 12 figli con grandi fluttuazioni. Per fare un matrimonio servono mucche, intese come dote del marito e un matrimonio “costa” 12 mucche. 
+
+Tra i maschi ci sono delle classi, bambini, giovani e guerrieri, più altre che non mi ricordo, che cambiano con l’età e il rilievo. Un bambino diventa giovane a seguito della circoncisione. Quando siamo arrivati c’erano diversi ragazzi che avevano fatto il rituale. Ci riconoscono perché vestono di nero e hanno una pittura bianca ricavata da acqua e roccia sul volto. James ci ha detto che questo serve per evitare il malocchio da parte della gente perché il giovane, chiamato Skolio, è vulnerabile e deve riprendersi dall’operazione. Una volta in forze, un mese circa, allora diventa un guerriero, colui che deve proteggere il pascolo e il villaggio.
+
+Conosciamo la nonna della nostra guida, una matrona centenaria. Dalle storie è lei che gestito l’espansione della famiglia, organizzando matrimoni e gestendo il bestiame. Lei è la grande istituzione del villaggio, tutti la rispettano. Si comporta proprio da nonna, offrendo da bere ad ospiti, lamentandosi con il nipote e dicendo di stare male quando invece ci è sembrata fresca come una rosa. Da quello che ho capito le donne sono le addette all’economia familiare, gestendo anche la parte di commercio in mercato. Una conferma la ho avuta vedendo la reazione ad un gesto di Andrea: lui gli ha offerto un bracciale ma lei lo ha rifiutato ben 2 volte dicendo di volere invece soldi. 
+
+Terminiamo quindi il tour tornando alla macchina e salendo accompagnando la guida al mercato. Lui si vede essere esperto infatti sceglie tutti sentieri in cui evitiamo grandi sussulti. Nel tragitto vediamo delle gazelle e baobab. Dipartiti da lui, ci fermiamo a mangiare e poi andiamo alla prossima tappa. In programma abbiamo per il giorno successivo una caccia con una tribù, quindi andiamo ad alloggiare per la notte presso una longue vicino al parco Manyara. Posto al limite del il resort fighetto ma comunque sia abbiamo mangiato bene e c’è stato un buon intrattenimento.
+
+Ci corichiamo quindi presto, pronti per la caccia di domani, sperando che sia una buona caccia!
