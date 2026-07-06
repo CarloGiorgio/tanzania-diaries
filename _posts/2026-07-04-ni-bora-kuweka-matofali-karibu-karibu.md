@@ -6,7 +6,7 @@ cover: /assets/uploads/1000110095.jpg
 soundtrack: https://open.spotify.com/track/7vggqxNKwd6xdRoYS0pQtM?si=aSW1K3saTVemurFKYAlJ1w
 gallery: []
 ---
-"è meglio posizionare i mattoni vicini tra loro)
+"è meglio posizionare i mattoni vicini tra loro"
 
 Oggi giornata chill, così pensavamo.
 
