@@ -41,3 +41,10 @@ collections:
         required: false
         summary: "{{fields.image}}"
         field: { label: "Photo", name: "image", widget: "image" }
+      - label: "Videos"
+        name: "videos"
+        widget: "list"
+        required: false
+        summary: "{{fields.video}}"
+        hint: "Short clips. MP4 plays everywhere; keep each under 100 MB (GitHub's limit)."
+        field: { label: "Video", name: "video", widget: "file" }
