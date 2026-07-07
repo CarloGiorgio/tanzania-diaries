@@ -1,6 +1,6 @@
 ---
 author: Carlo
-title: Buona caccia
+title: "Viaggio verso ovest, parte due: Buona caccia"
 date: 2026-07-06T20:00:00.000+03:00
 location: Lake Eyasi
 gallery:
