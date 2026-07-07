@@ -247,6 +247,23 @@ a { color: var(--accent); }
   .gallery { grid-template-columns: repeat(3, 1fr); }
 }
 
+/* Video gallery */
+.video-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin: 24px 0;
+}
+.post-video {
+  width: 100%;
+  border-radius: 12px;
+  background: #000;
+  display: block;
+}
+@media (min-width: 540px) {
+  .video-gallery:has(.post-video + .post-video) { grid-template-columns: repeat(2, 1fr); }
+}
+
 /* Soundtrack embed */
 .soundtrack { margin: 20px 0; }
 .soundtrack-spotify { border-radius: 12px; display: block; }

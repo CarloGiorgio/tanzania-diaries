@@ -53,6 +53,18 @@ layout: default
   </div>
   {% endif %}
 
+  {% if page.videos and page.videos.size > 0 %}
+  <div class="video-gallery">
+    {% for item in page.videos %}
+    {% assign vid = item.video | default: item %}
+    <video class="post-video" controls preload="metadata" playsinline>
+      <source src="{{ vid | relative_url }}">
+      Your browser can't play this video. <a href="{{ vid | relative_url }}">Download it</a>.
+    </video>
+    {% endfor %}
+  </div>
+  {% endif %}
+
   <p class="post-nav">
     <a href="{{ '/' | relative_url }}">← All days</a>
     {% if page.author %} · <a href="{{ '/' | append: page.author | downcase | append: '/' | relative_url }}">More from {{ page.author }}</a>{% endif %}
