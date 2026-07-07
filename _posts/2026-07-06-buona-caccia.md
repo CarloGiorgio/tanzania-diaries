@@ -2,6 +2,7 @@
 author: Carlo
 title: Buona caccia
 date: 2026-07-06T20:00:00.000+03:00
+location: Lake Eyasi
 ---
 La sveglia è per le 4:30. Per l’ansia di non svegliarmi affatto, di soprassalto sbatto gli occhi alle 2:45 senza poi più riuscire a richiuderli fino al suono della sveglia collettiva. Prepariamo tutto e con gli zaini fatti andiamo a fare colazione. Si dimostra essere una colazione più che abbondante, con grande carenza di caffè perché l’unico disponibile era quello in polvere. Alle 5:30 carichiamo la macchina e partiamo per il prossimo checkpoint. La strada è un’unica strada a due corsie ben asfaltata con poca se non nessuna illuminazione. Nonostante l’orario, il bordo strada è abbastanza movimentato: vediamo una iena, bambini vestiti con uniforme andare a scuola a piedi (chissà quanti chilometri dovranno fare prima di arrivare) e adulti che andavano a lavoro. Del viaggio ricordo poco perché tempo qualche minuto e subito crollo a dormire, così come gli altri tre. Mi risveglio prima di imboccare lo sterrato, ancora notte fonda. Ai primi sobbalzi stiamo tutti all’erta e ci godiamo l’apparire delle prime luci. Purtroppo il tempo era nuvolo quindi non abbiamo ammirato l’alba completa ma l’arancio riflettersi sulla terra gialla è stata una bella visione. Alle 7:00 raccogliamo la nostra guida del giorno, Innocent. 
 
