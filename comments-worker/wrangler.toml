@@ -11,4 +11,4 @@ MODERATORS = "CarloGiorgio,kingsanchilling"
 [[d1_databases]]
 binding = "DB"
 database_name = "tanzania-comments"
-database_id = "PASTE_DATABASE_ID_HERE"
+database_id = "3af3466c-145b-4b30-894e-126e6446ab5c"
