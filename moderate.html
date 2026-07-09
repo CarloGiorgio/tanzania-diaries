@@ -1,0 +1,163 @@
+---
+layout: default
+title: Moderate comments
+permalink: /moderate/
+sitemap: false
+---
+<article class="post moderation">
+  <h1 class="post-title">Moderate comments</h1>
+  <p class="post-meta">Approve or delete comments left by readers.</p>
+
+  {% unless site.comments_api and site.oauth_base %}
+  <p class="empty">Comments backend not configured yet (set <code>comments_api</code> and <code>oauth_base</code> in <code>_config.yml</code>).</p>
+  {% else %}
+
+  <div id="mod-login">
+    <button id="mod-login-btn" class="comment-submit">Log in with GitHub</button>
+    <p class="comment-note">Only Carlo &amp; Andrea's login can moderate.</p>
+    <p id="mod-login-err" class="comment-status err" hidden></p>
+  </div>
+
+  <div id="mod-panel" hidden>
+    <p id="mod-empty" class="empty" hidden>Nothing waiting. All caught up 🎉</p>
+    <ol class="comment-list mod-list" aria-live="polite"></ol>
+  </div>
+
+  <script>
+  (function () {
+    var API = "{{ site.comments_api }}".replace(/\/$/, '');
+    var OAUTH = "{{ site.oauth_base }}".replace(/\/$/, '');
+    var TOKEN_KEY = 'tz_mod_token';
+
+    var loginBox = document.getElementById('mod-login');
+    var loginBtn = document.getElementById('mod-login-btn');
+    var loginErr = document.getElementById('mod-login-err');
+    var panel = document.getElementById('mod-panel');
+    var emptyMsg = document.getElementById('mod-empty');
+    var list = panel.querySelector('.mod-list');
+
+    function token() { return localStorage.getItem(TOKEN_KEY); }
+
+    function fmtDate(ms) {
+      try { return new Date(ms).toLocaleString(); } catch (e) { return ''; }
+    }
+
+    // --- GitHub login via the existing OAuth worker (popup + postMessage) ---
+    loginBtn.addEventListener('click', function () {
+      loginErr.hidden = true;
+      var popup = window.open(OAUTH + '/auth', 'gh-login', 'width=600,height=720');
+      function onMsg(e) {
+        if (typeof e.data !== 'string') return;
+        // Worker announces itself, then waits for us to reply before sending the token.
+        if (e.data === 'authorizing:github') {
+          e.source.postMessage('ready', '*');
+          return;
+        }
+        if (e.data.indexOf('authorization:github:success:') === 0) {
+          window.removeEventListener('message', onMsg);
+          try {
+            var payload = JSON.parse(e.data.replace('authorization:github:success:', ''));
+            localStorage.setItem(TOKEN_KEY, payload.token);
+            if (popup) popup.close();
+            loadPending();
+          } catch (err) { showLoginError('Login failed.'); }
+        } else if (e.data.indexOf('authorization:github:error:') === 0) {
+          window.removeEventListener('message', onMsg);
+          showLoginError('GitHub login was cancelled.');
+        }
+      }
+      window.addEventListener('message', onMsg);
+    });
+
+    function showLoginError(msg) {
+      loginErr.textContent = msg;
+      loginErr.hidden = false;
+    }
+
+    function authHeaders() {
+      return { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + token() };
+    }
+
+    function loadPending() {
+      if (!token()) { showLogin(); return; }
+      fetch(API + '/api/pending', { headers: authHeaders() })
+        .then(function (r) {
+          if (r.status === 401) { localStorage.removeItem(TOKEN_KEY); showLogin(); showLoginError('That login can\'t moderate. Log in as Carlo.'); throw 0; }
+          return r.json();
+        })
+        .then(function (d) { showPanel(d.comments || []); })
+        .catch(function () {});
+    }
+
+    function showLogin() { panel.hidden = true; loginBox.hidden = false; }
+
+    function showPanel(comments) {
+      loginBox.hidden = true;
+      panel.hidden = false;
+      list.innerHTML = '';
+      emptyMsg.hidden = comments.length > 0;
+      comments.forEach(function (c) {
+        var li = document.createElement('li');
+        li.className = 'comment mod-item';
+
+        var meta = document.createElement('p');
+        meta.className = 'comment-meta';
+        var who = document.createElement('span');
+        who.className = 'comment-author';
+        who.textContent = c.name;
+        var when = document.createElement('span');
+        when.className = 'comment-date';
+        when.textContent = fmtDate(c.created_at);
+        meta.appendChild(who);
+        meta.appendChild(when);
+
+        var post = document.createElement('p');
+        post.className = 'mod-post';
+        post.textContent = 'on ' + c.post_id;
+
+        var body = document.createElement('p');
+        body.className = 'comment-body';
+        body.textContent = c.body;
+
+        var actions = document.createElement('div');
+        actions.className = 'mod-actions';
+        actions.appendChild(actionBtn('Approve', 'approve', c.id, li, 'mod-approve'));
+        actions.appendChild(actionBtn('Delete', 'reject', c.id, li, 'mod-reject'));
+
+        li.appendChild(meta);
+        li.appendChild(post);
+        li.appendChild(body);
+        li.appendChild(actions);
+        list.appendChild(li);
+      });
+    }
+
+    function actionBtn(label, action, id, li, cls) {
+      var b = document.createElement('button');
+      b.className = 'mod-btn ' + cls;
+      b.textContent = label;
+      b.addEventListener('click', function () {
+        b.disabled = true;
+        fetch(API + '/api/moderate', {
+          method: 'POST',
+          headers: authHeaders(),
+          body: JSON.stringify({ id: id, action: action })
+        })
+          .then(function (r) { return r.json(); })
+          .then(function (res) {
+            if (res.ok) {
+              li.remove();
+              if (!list.children.length) emptyMsg.hidden = false;
+            } else { b.disabled = false; }
+          })
+          .catch(function () { b.disabled = false; });
+      });
+      return b;
+    }
+
+    // Try existing token on load.
+    if (token()) loadPending();
+  })();
+  </script>
+  {% endunless %}
+</article>

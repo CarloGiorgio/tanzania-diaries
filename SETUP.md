@@ -64,6 +64,28 @@ Authors are already set to **Carlo** and **Andrea** (`admin/config.yml`,
 Repo → **Settings** → **Pages** → Source: **Deploy from a branch**,
 Branch: `master`, folder `/ (root)`. Save.
 
+## 6. Turn on reader comments (optional)
+
+Readers can leave comments on any post — with a name or as "Anonymous", no
+login. Nothing shows until you or Andrea approve it. Full steps in
+`comments-worker/README.md`. Short version:
+
+```bash
+cd comments-worker
+wrangler d1 create tanzania-comments          # paste the id into wrangler.toml
+wrangler d1 execute tanzania-comments --remote --file=./schema.sql
+wrangler deploy                               # note the URL it prints
+```
+
+If the printed URL's subdomain isn't `carlogiorgio`, update `comments_api` in
+`_config.yml`. Commit + push.
+
+**Approve comments:** open `https://carlogiorgio.github.io/moderate/`, log in
+with GitHub, tap **Approve** or **Delete**. Both Carlo (`CarloGiorgio`) and
+Andrea (`kingsanchilling`) can moderate with their own accounts — the allowlist
+is `MODERATORS` in `comments-worker/wrangler.toml`. Bookmark it / Add to Home
+Screen like the editor.
+
 ## Done. Daily use from your phone
 
 1. Open `https://carlogiorgio.github.io/admin/`

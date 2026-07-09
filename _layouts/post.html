@@ -69,6 +69,8 @@ layout: default
     <a href="{{ '/' | relative_url }}">← All days</a>
     {% if page.author %} · <a href="{{ '/' | append: page.author | downcase | append: '/' | relative_url }}">More from {{ page.author }}</a>{% endif %}
   </p>
+
+  {% include comments.html %}
 </article>
 
 <script>

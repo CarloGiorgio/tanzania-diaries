@@ -1,0 +1,118 @@
+{% if site.comments_api %}
+<section class="comments" data-post-id="{{ page.url }}" data-api="{{ site.comments_api }}">
+  <h2 class="section-heading comments-heading">Comments</h2>
+
+  <ol class="comment-list" aria-live="polite">
+    <li class="comment-loading">Loading comments…</li>
+  </ol>
+
+  <form class="comment-form" novalidate>
+    <p class="comment-form-title">Leave a comment</p>
+    <label class="comment-field">
+      <span>Name <em>(optional)</em></span>
+      <input type="text" name="name" maxlength="60" placeholder="Anonymous" autocomplete="name">
+    </label>
+    <label class="comment-field">
+      <span>Comment</span>
+      <textarea name="body" rows="4" maxlength="2000" required placeholder="Say something nice…"></textarea>
+    </label>
+    <button type="submit" class="comment-submit">Post comment</button>
+    <p class="comment-note">Comments are checked before they appear.</p>
+    <p class="comment-status" role="status" hidden></p>
+  </form>
+</section>
+
+<script>
+(function () {
+  var root = document.querySelector('.comments');
+  if (!root) return;
+  var api = root.getAttribute('data-api').replace(/\/$/, '');
+  var postId = root.getAttribute('data-post-id');
+  var list = root.querySelector('.comment-list');
+  var form = root.querySelector('.comment-form');
+  var status = root.querySelector('.comment-status');
+
+  function fmtDate(ms) {
+    try {
+      return new Date(ms).toLocaleDateString(undefined, { day: 'numeric', month: 'long', year: 'numeric' });
+    } catch (e) { return ''; }
+  }
+
+  function render(comments) {
+    list.innerHTML = '';
+    if (!comments.length) {
+      var empty = document.createElement('li');
+      empty.className = 'comment-empty';
+      empty.textContent = 'No comments yet. Be the first!';
+      list.appendChild(empty);
+      return;
+    }
+    comments.forEach(function (c) {
+      var li = document.createElement('li');
+      li.className = 'comment';
+      var meta = document.createElement('p');
+      meta.className = 'comment-meta';
+      var who = document.createElement('span');
+      who.className = 'comment-author';
+      who.textContent = c.name;               // textContent = no HTML injection
+      var when = document.createElement('span');
+      when.className = 'comment-date';
+      when.textContent = fmtDate(c.created_at);
+      meta.appendChild(who);
+      meta.appendChild(when);
+      var body = document.createElement('p');
+      body.className = 'comment-body';
+      body.textContent = c.body;
+      li.appendChild(meta);
+      li.appendChild(body);
+      list.appendChild(li);
+    });
+  }
+
+  function load() {
+    fetch(api + '/api/comments?post_id=' + encodeURIComponent(postId))
+      .then(function (r) { return r.json(); })
+      .then(function (d) { render(d.comments || []); })
+      .catch(function () {
+        list.innerHTML = '<li class="comment-empty">Couldn\'t load comments.</li>';
+      });
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var body = form.body.value.trim();
+    if (!body) return;
+    var btn = form.querySelector('.comment-submit');
+    btn.disabled = true;
+    status.hidden = false;
+    status.className = 'comment-status';
+    status.textContent = 'Sending…';
+
+    fetch(api + '/api/comments', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ post_id: postId, name: form.name.value.trim(), body: body })
+    })
+      .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
+      .then(function (res) {
+        btn.disabled = false;
+        if (res.ok) {
+          form.reset();
+          status.className = 'comment-status ok';
+          status.textContent = 'Thanks! Your comment will show once approved.';
+        } else {
+          status.className = 'comment-status err';
+          status.textContent = (res.d && res.d.error) || 'Something went wrong.';
+        }
+      })
+      .catch(function () {
+        btn.disabled = false;
+        status.className = 'comment-status err';
+        status.textContent = 'Network error. Try again.';
+      });
+  });
+
+  load();
+})();
+</script>
+{% endif %}

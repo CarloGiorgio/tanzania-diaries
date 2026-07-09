@@ -11,12 +11,19 @@ permalink: /:year/:month/:day/:title/
 markdown: kramdown
 timezone: Africa/Dar_es_Salaam
 
+# Reader comments backend (Cloudflare Worker + D1). See comments-worker/README.md.
+# Fix the subdomain if your Worker URL differs after `wrangler deploy`.
+comments_api: https://carlo-comments.carlogiorgio.workers.dev
+# GitHub OAuth worker, reused to log the moderation page in (same one the CMS uses).
+oauth_base: https://carlo-cms-oauth.carlogiorgio.workers.dev
+
 # Don't let Jekyll process these
 exclude:
   - README.md
   - mario/
   - .github/
   - oauth-worker/
+  - comments-worker/
   - vendor/
   - Gemfile
   - Gemfile.lock

@@ -1,0 +1,14 @@
+name = "carlo-comments"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# GitHub logins allowed to approve/delete comments. Comma-separated.
+# Carlo + Andrea (his own account: kingsanchilling).
+[vars]
+MODERATORS = "CarloGiorgio,kingsanchilling"
+
+# D1 database binding. Fill in database_id after `wrangler d1 create` (README step 2).
+[[d1_databases]]
+binding = "DB"
+database_name = "tanzania-comments"
+database_id = "PASTE_DATABASE_ID_HERE"
