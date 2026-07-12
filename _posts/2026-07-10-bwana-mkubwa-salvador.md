@@ -32,4 +32,6 @@ Il pomeriggio Carlo e Silvio apro la biblioteca scoprendo il furto delle matite 
 
 Nel dopocena si programma velocemente il piano del giorno dopo, soprattutto per i prossimi tempi miei e di Carlo, su come organizzare il fundraising per finire il progetto entro agosto, arriverà poi allo spam di link, e su cosa fare successivamente: dove spostarci, che workaway provare e che altre attività fare.
 
+Dopo andiamo ad un locale con un po' di musica moooolto pieno di bianchi per essere qui, all' ingresso becchiamo il tentativo di truffa da due tipi con birre e un metal detector fake che provano a venderci l'ingresso al locale (locale gratuito) ci spariamo 3-4 birrette con la partita poi diamo un po' di scuola di ballo nel dancefloor e belli volanti a nanna.
+
 Questi giorni poco swahili perché la testa è impegnata a sbrogliare la situazione.
