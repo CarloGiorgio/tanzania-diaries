@@ -3,6 +3,7 @@ author: Carlo
 title: It is coffee time!
 date: 2026-07-12T22:43:00.000+03:00
 cover: /assets/uploads/img_6712.jpeg
+soundtrack: https://open.spotify.com/track/7yq4Qj7cqayVTp3FF9CWbm?si=vcGL2cB7Qp2-nmLLDhC5Sw&utm_source=copy-link
 gallery:
   - /assets/uploads/img_6713.jpeg
   - /assets/uploads/18d195c0-8c99-4737-8127-f14a9bd1e928.jpeg
