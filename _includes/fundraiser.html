@@ -1,0 +1,9 @@
+{% if site.fundraiser.active %}
+<aside class="fundraiser" role="region" aria-label="Fundraising campaign">
+  <div class="fundraiser-inner">
+    <span class="fundraiser-badge">📣 News</span>
+    <p class="fundraiser-text">{{ site.fundraiser.title }}</p>
+    <a class="fundraiser-cta" href="{{ site.fundraiser.url }}" target="_blank" rel="noopener">{{ site.fundraiser.cta }} →</a>
+  </div>
+</aside>
+{% endif %}

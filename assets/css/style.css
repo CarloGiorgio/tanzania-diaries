@@ -419,3 +419,44 @@ a { color: var(--accent); }
 .mod-btn:disabled { opacity: 0.5; cursor: default; }
 .mod-approve { color: #15803d; border-color: #86efac; }
 .mod-reject { color: #b91c1c; border-color: #fca5a5; }
+
+/* Fundraiser alert banner (top of every page) */
+.fundraiser {
+  background: var(--accent);
+  color: #fff;
+}
+.fundraiser-inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.fundraiser-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 3px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.fundraiser-text {
+  margin: 0;
+  flex: 1 1 200px;
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+.fundraiser-cta {
+  color: var(--accent);
+  background: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+.fundraiser-cta:hover { background: #fef2f2; }

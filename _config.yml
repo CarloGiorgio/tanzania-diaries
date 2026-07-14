@@ -11,6 +11,13 @@ permalink: /:year/:month/:day/:title/
 markdown: kramdown
 timezone: Africa/Dar_es_Salaam
 
+# Fundraising alert banner shown at the top of every page. Set active: false to hide.
+fundraiser:
+  active: true
+  url: https://www.gofundme.com/f/arusha-school-construction-project
+  title: "We've launched a fundraiser for the Arusha School Construction Project."
+  cta: Donate
+
 # Reader comments backend (Cloudflare Worker + D1). See comments-worker/README.md.
 # Fix the subdomain if your Worker URL differs after `wrangler deploy`.
 comments_api: https://carlo-comments.carlogiorgio.workers.dev
