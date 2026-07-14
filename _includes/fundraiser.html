@@ -21,9 +21,12 @@
     if (e.isIntersecting) {
       banner.classList.remove('is-pinned');
       anchor.style.height = '';
+      document.body.style.paddingBottom = '';
     } else {
-      anchor.style.height = banner.offsetHeight + 'px';
+      var h = banner.offsetHeight;
+      anchor.style.height = h + 'px';
       banner.classList.add('is-pinned');
+      document.body.style.paddingBottom = h + 'px';
     }
   }, { threshold: 0 });
   io.observe(anchor);
