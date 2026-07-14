@@ -1,9 +1,33 @@
 {% if site.fundraiser.active %}
-<aside class="fundraiser" role="region" aria-label="Fundraising campaign">
-  <div class="fundraiser-inner">
-    <span class="fundraiser-badge">📣 News</span>
-    <p class="fundraiser-text">{{ site.fundraiser.title }}</p>
-    <a class="fundraiser-cta" href="{{ site.fundraiser.url }}" target="_blank" rel="noopener">{{ site.fundraiser.cta }} →</a>
-  </div>
-</aside>
+{% assign fundraiser_home = false %}
+{% if page.url == '/' %}{% assign fundraiser_home = true %}{% endif %}
+<div class="fundraiser-anchor">
+  <aside class="fundraiser{% if fundraiser_home %} fundraiser--floats{% endif %}" role="region" aria-label="Fundraising campaign">
+    <div class="fundraiser-inner">
+      <span class="fundraiser-badge">📣 News</span>
+      <p class="fundraiser-text">{{ site.fundraiser.title }}</p>
+      <a class="fundraiser-cta" href="{{ site.fundraiser.url }}" target="_blank" rel="noopener">{{ site.fundraiser.cta }} →</a>
+    </div>
+  </aside>
+</div>
+{% if fundraiser_home %}
+<script>
+(function () {
+  var anchor = document.querySelector('.fundraiser-anchor');
+  var banner = anchor && anchor.querySelector('.fundraiser--floats');
+  if (!banner || !('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function (entries) {
+    var e = entries[0];
+    if (e.isIntersecting) {
+      banner.classList.remove('is-pinned');
+      anchor.style.height = '';
+    } else {
+      anchor.style.height = banner.offsetHeight + 'px';
+      banner.classList.add('is-pinned');
+    }
+  }, { threshold: 0 });
+  io.observe(anchor);
+})();
+</script>
+{% endif %}
 {% endif %}

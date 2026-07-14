@@ -460,3 +460,18 @@ a { color: var(--accent); }
   white-space: nowrap;
 }
 .fundraiser-cta:hover { background: #fef2f2; }
+
+/* Home page: banner detaches and pins to the bottom once scrolled past */
+.fundraiser--floats.is-pinned {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.18);
+  animation: fundraiser-rise 0.25s ease;
+}
+@keyframes fundraiser-rise {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}
