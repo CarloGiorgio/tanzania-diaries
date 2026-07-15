@@ -2,6 +2,7 @@
 author: Carlo
 title: Mattone dopo Mattone
 date: 2026-07-14T22:17:00.000+03:00
+soundtrack: https://open.spotify.com/track/6XK6Zw6JkFsHXzAcMWNiIr?si=iGZPKJiQQv-ko2CRN-yGLg&utm_source=copy-link&rowId=0dd470f1a87dc4f1c48a&context=spotify%3Aplaylist%3A37i9dQZF1F5p3rmiWPIYgZ
 ---
 Il primo pensiero del giorno è ovviamente sulla raccolta fondi. Vediamo che infatti sta procedendo benissimo per essere passate meno di 12 ore e continuano ad arrivare fondi. Oggi continuiamo con la costruzione delle mura. Il lavoro impiega un po’ a ingranare in quanto la coppia maestro-allievo di ieri inizia a fidarsi maggiormente di noi. Purtroppo ci sta una carenza di cazzuole quindi sollecitiamo James all’acquisto per permetterci di lavorare. La risposta è velocissima e ci mettiamo subito ad assemblare le fila. Io e Andrea ci alterniamo con la malta, entrambi smaniosi di affinare la propria tecnica e di non rimanere con le mani in mano. Una risposta che capisco per bene. Adesso che c’è gente che crede in noi onestamente io non voglio mancare meno alla fiducia riposta per realizzare questa struttura.
 
