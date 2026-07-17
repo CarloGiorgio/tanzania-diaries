@@ -3,6 +3,7 @@ author: Andrea
 title: matumaini yanawaka
 date: 2026-07-14T10:06:00.000+03:00
 cover: /assets/uploads/1000111266.jpg
+soundtrack: https://open.spotify.com/track/3ototzniREbKmj1958CZEe?si=ghkTVBhbSi6oyMex6LipSQ&utm_source=copy-link
 ---
 "la speranza divampa"
 
