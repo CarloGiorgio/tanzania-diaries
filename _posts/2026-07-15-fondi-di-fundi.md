@@ -1,8 +1,11 @@
 ---
 author: Carlo
-title: "Fondi di Fundi "
+title: "Fondi per Fundi "
 date: 2026-07-15T22:19:00.000+03:00
+cover: /assets/uploads/img_6722.jpeg
 soundtrack: https://open.spotify.com/track/1QbOvACeYanja5pbnJbAmk?si=0mt4G3kvSuGyy1BTyWaxMQ&utm_source=copy-link
+gallery:
+  - /assets/uploads/img_0219.jpeg
 ---
 Grazie, infinitamente grazie!
 
