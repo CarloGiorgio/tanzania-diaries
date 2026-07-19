@@ -3,6 +3,7 @@ author: Carlo
 title: "Checkpoint "
 date: 2026-07-17T19:03:00.000+03:00
 cover: /assets/uploads/img_6750.jpeg
+soundtrack: https://open.spotify.com/track/2x8evxqUlF0eRabbW2JBJd?si=gksVl8xBQe2St7uvo29Wkw&utm_source=copy-link&rowId=034349e68bea0a36c98e&context=spotify%3Aplaylist%3A37i9dQZF1F5p3rmiWPIYgZ
 ---
 
 Oggi abbiamo un nuovo boost nella costruzione. Oltre alla coppia ci sta anche un altro fundi. Lui è molto più veloce dell’altro ed essendo in due riescono a parallelizzare i muri. Nonostante questo in tre a terra eravamo troppi. Io, Andrea e l’altro riusciamo ad anticipare il lavoro, arrangiando i mattoni, facendo la calce e raccogliendo l’acqua. Questo ci ha permesso di avere abbastanza tempo libero, al punto che Andrea si separa per parte della mattina a recuperare i blog. Anche lui è rimasto indietro. Appena si stacca però l’assenza si sente. Io e l’amico siamo riusciamo a soddisfare le richieste dei fundi ma passando da pala a mattoni senza fermarci. Praticamente alle 12:30 manca solo un muro per finire la struttura!
