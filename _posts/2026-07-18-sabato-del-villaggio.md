@@ -1,0 +1,9 @@
+---
+author: Carlo
+title: "Sabato del villaggio "
+date: 2026-07-18T20:59:00.000+03:00
+soundtrack: https://open.spotify.com/track/6Od5p4Iq15dPkutZXJ1NeG?si=DsLj5_c7SzqXSJrp6Qx2RQ&utm_source=copy-link
+---
+Questo giorno ce lo prendiamo di puro riposo. Andiamo infatti a fare colazione verso le 9:00 e restiamo in chiacchiera a guardare una serie fino alle 11. In stanza mettiamo un po’ di ordine e ci dedichiamo alla lettura di libri. Ringrazio veramente per il Kindle perché sto già al quarto libro da quando sono partito e dubito che il numero si fermi. Così passa anche il pomeriggio, senza piani e nel riposo. Il mio è stato interrotto dai bambini che decidono di svegliarmi dall’amaca, maledetti.
+
+La sera si decide di andare di nuovo al the hub come ultima serata con il socio. Prima di partire però decidiamo di fare un fuoco a terra e bere le birre che avevamo preso. Io uso tutte le mie conoscenze di fuochista: insegno a Silvio che legna raccogliere, dispongo la struttura a boscaiolo per l’accensione e al secondo tentativo con un fiammifero tiro su un fuoco più che decente, sfruttando al massimo la legna che avevamo raccolto. Passiamo la serata quindi a chiacchiera, facendo battute e raccontando storie. Verso le 23 il fuoco viene ammazzato e ci prepariamo ad andare al locale. Nel momento però che rientriamo a me prende una botta di sonno molto forte e una stanchezza non indifferente. Dopo che i bimbi mi hanno svegliato non sono più riuscito a riposarmi ma sono stato sempre sveglio, mentre gli altri due hanno dormito (Andrea fino alle 19 praticamente). A malincuore devo saltare l’uscita. Onestamente non mi andava manco di forzarmi, anzi ho preferito così, almeno l’ultima serata tanzaniana me la ricorderò piacevole. Andrea e il socio vanno invece, tornando a casa per le 3. Ma io ero già bello che a dormire.
