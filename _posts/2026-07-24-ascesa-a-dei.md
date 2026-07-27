@@ -4,6 +4,7 @@ title: Ascesa a dei
 date: 2026-07-24T03:44:00.000+03:00
 end_date: 2026-07-26
 cover: /assets/uploads/img_6845.jpeg
+soundtrack: https://open.spotify.com/track/4mowfIHVIYRoepbExd1cwu?si=5SdLS4xwRHm4Mux1pa8Nyg&utm_source=copy-link
 gallery:
   - /assets/uploads/faf2d8b7-2854-4334-a8c8-d340b8a55452.jpeg
   - /assets/uploads/img_6860.jpeg
