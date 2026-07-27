@@ -3,6 +3,7 @@ author: Carlo
 title: Tutto in vendita
 date: 2026-07-23T22:00:00.000+03:00
 cover: /assets/uploads/img_6825.jpeg
+soundtrack: https://open.spotify.com/track/0Tr5G2mE56eLUGvCaXRM8I?si=-khGCu0BQPqi6D3rJPf_xQ&utm_source=copy-link&context=spotify%3Aplaylist%3A37i9dQZF1F5p3rmiWPIYgZ&rowId=ef194e263c9d50b73b53
 gallery:
   - /assets/uploads/img_6830.jpeg
   - /assets/uploads/img_6829.jpeg
