@@ -12,6 +12,11 @@ on:
 permissions:
   contents: write
 
+# Serialize runs on the same branch so two near-simultaneous merges don't
+# both check out master and race to push (the second push gets rejected).
+concurrency:
+  group: resize-images-${{ github.ref }}
+
 jobs:
   resize:
     runs-on: ubuntu-latest
@@ -41,6 +46,9 @@ jobs:
           if ! git diff --quiet; then
             git add assets/uploads
             git commit -m "Auto-resize uploaded images for web"
+            # Rebase onto any remote changes before pushing, in case master
+            # moved while this job ran.
+            git pull --rebase origin master
             git push
           else
             echo "No oversized images to resize."
