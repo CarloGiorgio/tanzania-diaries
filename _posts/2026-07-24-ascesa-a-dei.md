@@ -4,6 +4,16 @@ title: Ascesa a dei
 date: 2026-07-24T03:44:00.000+03:00
 end_date: 2026-07-26
 cover: /assets/uploads/img_6845.jpeg
+gallery:
+  - /assets/uploads/faf2d8b7-2854-4334-a8c8-d340b8a55452.jpeg
+  - /assets/uploads/img_6860.jpeg
+  - /assets/uploads/img_6857.jpeg
+  - /assets/uploads/img_6855.jpeg
+  - /assets/uploads/img_6851.jpeg
+  - /assets/uploads/img_6848.jpeg
+  - /assets/uploads/img_6849.jpeg
+  - /assets/uploads/img_6866.jpeg
+  - /assets/uploads/img_6850.jpeg
 ---
 Inizia il lungo, anzi	 lunghissimo, viaggio per il pernotto di questo finesettimana. Su suggerimento del duca James, ci siamo informati su un monte vulcano, il Ol Doinyo Lengai (La montagna degli dei). Rispetto al prezzo che lui ci ha dato, siamo riusciti a dimezzarlo trovando un posto in cui pernottare per due giorni pagandone uno (mossa) e spostandoci con un autobus.
 
