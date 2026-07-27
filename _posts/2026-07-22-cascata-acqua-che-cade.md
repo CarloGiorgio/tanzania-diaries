@@ -3,6 +3,7 @@ author: Carlo
 title: "Cascata=acqua che cade "
 date: 2026-07-22T08:53:00.000+03:00
 cover: /assets/uploads/img_6799.jpeg
+soundtrack: https://open.spotify.com/track/5DpOrZhEK1QQ9HoDZWbU8E?si=qT9IB244SredgjJpW6OqPA&utm_source=copy-link
 gallery:
   - /assets/uploads/img_6786.jpeg
   - /assets/uploads/img_6819.jpeg
