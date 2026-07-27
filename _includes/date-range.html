@@ -1,0 +1,22 @@
+{%- comment -%}
+Renders a post's date. Pass a start date, and optionally an end date for
+multi-day posts. Collapses shared month/year: "20–22 July 2026".
+Usage: {% include date-range.html start=page.date end=page.end_date %}
+{%- endcomment -%}
+{%- assign _start = include.start -%}
+{%- assign _end = include.end -%}
+{%- if _end and _end != "" -%}
+  {%- assign _s_month = _start | date: "%B %Y" -%}
+  {%- assign _e_month = _end | date: "%B %Y" -%}
+  {%- assign _s_year = _start | date: "%Y" -%}
+  {%- assign _e_year = _end | date: "%Y" -%}
+  {%- if _s_month == _e_month -%}
+    {{- _start | date: "%-d" }}–{{ _end | date: "%-d %B %Y" -}}
+  {%- elsif _s_year == _e_year -%}
+    {{- _start | date: "%-d %B" }} – {{ _end | date: "%-d %B %Y" -}}
+  {%- else -%}
+    {{- _start | date: "%-d %B %Y" }} – {{ _end | date: "%-d %B %Y" -}}
+  {%- endif -%}
+{%- else -%}
+  {{- _start | date: "%-d %B %Y" -}}
+{%- endif -%}

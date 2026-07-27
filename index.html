@@ -27,7 +27,7 @@ layout: default
     <a class="latest-card latest-carlo" href="{{ latest_carlo.url | relative_url }}">
       <span class="badge badge-carlo">Carlo</span>
       <h3 class="latest-title">{{ latest_carlo.title }}</h3>
-      <p class="latest-when">{{ latest_carlo.date | date: "%-d %B %Y" }}{% if latest_carlo.location %} · {{ latest_carlo.location }}{% endif %}</p>
+      <p class="latest-when">{% include date-range.html start=latest_carlo.date end=latest_carlo.end_date %}{% if latest_carlo.location %} · {{ latest_carlo.location }}{% endif %}</p>
       <p class="latest-excerpt">{{ latest_carlo.content | strip_html | truncatewords: 24 }}</p>
     </a>
     {% endif %}
@@ -35,7 +35,7 @@ layout: default
     <a class="latest-card latest-andrea" href="{{ latest_andrea.url | relative_url }}">
       <span class="badge badge-andrea">Andrea</span>
       <h3 class="latest-title">{{ latest_andrea.title }}</h3>
-      <p class="latest-when">{{ latest_andrea.date | date: "%-d %B %Y" }}{% if latest_andrea.location %} · {{ latest_andrea.location }}{% endif %}</p>
+      <p class="latest-when">{% include date-range.html start=latest_andrea.date end=latest_andrea.end_date %}{% if latest_andrea.location %} · {{ latest_andrea.location }}{% endif %}</p>
       <p class="latest-excerpt">{{ latest_andrea.content | strip_html | truncatewords: 24 }}</p>
     </a>
     {% endif %}
