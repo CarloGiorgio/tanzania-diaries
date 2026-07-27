@@ -31,6 +31,7 @@ collections:
         hint: "Pick yourself — this badges the post"
       - { label: "Title", name: "title", widget: "string", hint: "e.g. Arrival in Arusha" }
       - { label: "Date", name: "date", widget: "datetime", default: "" }
+      - { label: "End date", name: "end_date", widget: "datetime", required: false, date_format: "YYYY-MM-DD", time_format: false, hint: "Only for a post covering several days — leave blank for a single day" }
       - { label: "Location", name: "location", widget: "string", required: false, hint: "e.g. Arusha, Tanzania" }
       - { label: "Cover photo", name: "cover", widget: "image", required: false, hint: "Big photo at the top" }
       - { label: "Soundtrack", name: "soundtrack", widget: "string", required: false, hint: "Paste a Spotify or YouTube link — plays at the top of the note" }

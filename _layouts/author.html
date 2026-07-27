@@ -28,7 +28,7 @@ layout: default
       {% endif %}
       <div class="card-text">
         <h3 class="card-title">{{ post.title }}</h3>
-        <p class="card-meta">{{ post.date | date: "%-d %B %Y" }}{% if post.location %} · {{ post.location }}{% endif %}</p>
+        <p class="card-meta">{% include date-range.html start=post.date end=post.end_date %}{% if post.location %} · {{ post.location }}{% endif %}</p>
         <p class="card-excerpt">{{ post.content | strip_html | truncatewords: 30 }}</p>
       </div>
     </a>
