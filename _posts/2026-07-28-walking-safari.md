@@ -2,6 +2,7 @@
 author: Carlo
 title: Walking Safari
 date: 2026-07-28T20:07:00.000+03:00
+cover: /assets/uploads/6096add7-bafd-4ed6-8273-0420eec7f685.jpeg
 soundtrack: "Arriveremo a destinazione? Tra i diversi piani elaborati, questo
   sembrava il più semplice eppure ha rivelato le sue difficoltà. Nel parco
   nazionale di Arusha c’è la possibilità di fare un safari a piedi, scortato da
@@ -42,6 +43,13 @@ soundtrack: "Arriveremo a destinazione? Tra i diversi piani elaborati, questo
   leccalecca. Devono ancora metabolizzare che l’anello debole, Silvio, se ne è
   andato, che io non cedo a queste richieste e che Andrea non vuole avere a che
   fare con i bimbi direttamente. Il resto nel chill: riposo, cena e nanna."
+gallery:
+  - /assets/uploads/img_6885.jpeg
+  - /assets/uploads/img_6881.jpeg
+  - /assets/uploads/img_6883.jpeg
+  - /assets/uploads/img_6882.jpeg
+  - /assets/uploads/img_6887.jpeg
+  - /assets/uploads/img_6875.jpeg
 ---
 Arriveremo a destinazione? Tra i diversi piani elaborati, questo sembrava il più semplice eppure ha rivelato le sue difficoltà. Nel parco nazionale di Arusha c’è la possibilità di fare un safari a piedi, scortato da un ranger. La sera prima di partire ne parliamo con James, e lui ci dice una cosa che non avevamo trovato: il parco presenta 3 gates, ciascuno abbastanza distante dall’altro, 20 chilometri, e senza un trasporto interno. Per abbattere i prezzi, avevamo fatto un programma con spostamenti in mezzi pubblici. Questa cosa cambia profondamente il piano. Oramai è troppo tardi per fissare una macchina per tutta la giornata.
 
