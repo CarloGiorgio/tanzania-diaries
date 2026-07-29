@@ -2,5 +2,47 @@
 author: Carlo
 title: Walking Safari
 date: 2026-07-28T20:07:00.000+03:00
+soundtrack: "Arriveremo a destinazione? Tra i diversi piani elaborati, questo
+  sembrava il più semplice eppure ha rivelato le sue difficoltà. Nel parco
+  nazionale di Arusha c’è la possibilità di fare un safari a piedi, scortato da
+  un ranger. La sera prima di partire ne parliamo con James, e lui ci dice una
+  cosa che non avevamo trovato: il parco presenta 3 gates, ciascuno abbastanza
+  distante dall’altro, 20 chilometri, e senza un trasporto interno. Per
+  abbattere i prezzi, avevamo fatto un programma con spostamenti in mezzi
+  pubblici. Questa cosa cambia profondamente il piano. Oramai è troppo tardi per
+  fissare una macchina per tutta la giornata. Per l’andata abbiamo prenotato un
+  trasporto in macchina alle 6:30. Facciamo la conoscenza di Julius, un
+  guidatore che sa parlare bene in inglese. Gli spieghiamo la situazione e lui,
+  giustamente spronato dal soldo, ci accompagna fino al secondo Gate. Arrivati
+  alla prima entrata c’è stato un guasto elettrico per cui non si poteva pagare
+  con carta. Aspettiamo per diversi minuti e alla fine paghiamo l’entrata.
+  Julius ci scorta fino al secondo cancello e qui prendiamo il ranger e ci viene
+  appioppata una guida, abbastanza inutile. Camminiamo in mezzo a cascate, fiumi
+  e foreste, con un passo molto tranquillo, cercando di ascoltare la natura.
+  Troviamo diversi animali, da bufali a babbuini a puma (signor maiali). Abbiamo
+  la fortuna di vedere le scimmie colombo che saltano da albero ad albero e che
+  si riposano in gruppo tra di loro. Dopo 4 ore finiamo la piacevole
+  passeggiata. Per il ritorno, io e Andrea pensavamo che Julius sarebbe potuto
+  tornare indietro e successivamente venirci a prendere, invece se lo avesse
+  fatto, avrebbe dovuto pagare di nuovo la tassa di ingresso. Ha deciso quindi
+  di rimanere ad aspettarci in macchina, eroe. Nel viaggio di ritorno, prima do
+  uscire dal parco troviamo diversi animali a bordo strada., con i babbuini i
+  più numerosi. Il viaggio fila liscio, molto stranamente, al punto che entrambi
+  ci addormentiamo dopo essere usciti dal parco. Lasciamo il nostro guidatore
+  per le 15:20 e torniamo da James. Verso le 17:20 apro la libreria, dopo non
+  essere riuscito a dormire a causa dei bambini che gridano dalle 16 TEACHEEEER.
+  Essendo arrivato tardi non ho trovato tanta gente, solo 6 bimbi. Lascio quindi
+  il pallone ma si annoiano facilmente. Arriva qualche ragazzo più grande che
+  prende possesso del gioco. Io mi ritrovo quindi a gestire quelli più piccoli,
+  di circa 5 anni. Non mi va di prendere colori, matite, disegni, troppo
+  materiale. Decido quindi di farli appendere sugli alberi, facendoli appendere
+  ali rami. Si divertono un casino e altri, più svegli e atletici, riescono
+  anche a scalare un albero intero, fino a 3 metri di altezza. Verso le 19, con
+  il tramonto, i bambini se ne vanno, non prima di avermi chiesto pipi, i
+  leccalecca. Devono ancora metabolizzare che l’anello debole, Silvio, se ne è
+  andato, che io non cedo a queste richieste e che Andrea non vuole avere a che
+  fare con i bimbi direttamente. Il resto nel chill: riposo, cena e nanna."
 ---
-Piano
+Arriveremo a destinazione? Tra i diversi piani elaborati, questo sembrava il più semplice eppure ha rivelato le sue difficoltà. Nel parco nazionale di Arusha c’è la possibilità di fare un safari a piedi, scortato da un ranger. La sera prima di partire ne parliamo con James, e lui ci dice una cosa che non avevamo trovato: il parco presenta 3 gates, ciascuno abbastanza distante dall’altro, 20 chilometri, e senza un trasporto interno. Per abbattere i prezzi, avevamo fatto un programma con spostamenti in mezzi pubblici. Questa cosa cambia profondamente il piano. Oramai è troppo tardi per fissare una macchina per tutta la giornata.
+
+Per l’andata abbiamo prenotato un trasporto in macchina alle 6:30. Facciamo la conoscenza di Julius, un guidatore che sa parlare bene in inglese. Gli spieghiamo la situazione e lui, giustamente spronato dal soldo, ci accompagna fino al secondo Gate. Arrivati alla prima entrata c’è stato un guasto elettrico per cui non si poteva pagare con carta. Aspettiamo per diversi minuti e alla fine paghiamo l’entrata. Julius ci scorta fino al secondo cancello e qui prendiamo il ranger e ci viene appioppata una guida, abbastanza inutile. Camminiamo in mezzo a cascate, fiumi e foreste, con un passo molto tranquillo, cercando di ascoltare la natura. Troviamo diversi animali, da bufali a babbuini a puma (signor maiali). Abbiamo la fortuna di vedere le scimmie colombo che saltano da albero ad albero e che si riposano in gruppo tra di loro. Dopo 4 ore finiamo la piacevole passeggiata. Per il ritorno, io e Andrea pensavamo che Julius sarebbe potuto tornare indietro e successivamente venirci a prendere, invece se lo avesse fatto, avrebbe dovuto pagare di nuovo la tassa di ingresso. Ha deciso quindi di rimanere ad aspettarci in macchina, eroe. Nel viaggio di ritorno, prima do uscire dal parco troviamo diversi animali a bordo strada., con i babbuini i più numerosi. Il viaggio fila liscio, molto stranamente, al punto che entrambi ci addormentiamo dopo essere usciti dal parco. Lasciamo il nostro guidatore per le 15:20 e torniamo da James. Verso le 17:20 apro la libreria, dopo non essere riuscito a dormire a causa dei bambini che gridano dalle 16 TEACHEEEER. Essendo arrivato tardi non ho trovato tanta gente, solo 6 bimbi. Lascio quindi il pallone ma si annoiano facilmente. Arriva qualche ragazzo più grande che prende possesso del gioco. Io mi ritrovo quindi a gestire quelli più piccoli, di circa 5 anni. Non mi va di prendere colori, matite, disegni, troppo materiale. Decido quindi di farli appendere sugli alberi, facendoli appendere ali rami. Si divertono un casino e altri, più svegli e atletici, riescono anche a scalare un albero intero, fino a 3 metri di altezza. Verso le 19, con il tramonto, i bambini se ne vanno, non prima di avermi chiesto pipi, i leccalecca. Devono ancora metabolizzare che l’anello debole, Silvio, se ne è andato, che io non cedo a queste richieste e che Andrea non vuole avere a che fare con i bimbi direttamente. Il resto nel chill: riposo, cena e nanna.
