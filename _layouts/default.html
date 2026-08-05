@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,9 +13,10 @@
 </head>
 <body>
   {% include fundraiser.html %}
-  <header class="site-header">
+  <header class="site-header notranslate" lang="en" translate="no">
     <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
     <p class="site-tagline">{{ site.description }}</p>
+    {% include translate.html %}
     <nav class="site-nav">
       <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>All days</a>
       <a href="{{ '/this-week/' | relative_url }}"{% if page.nav_id == 'week' %} class="active"{% endif %}>This week</a>
@@ -29,7 +30,7 @@
     {{ content }}
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer notranslate" lang="en" translate="no">
     <p>{{ site.title }} · <a href="{{ '/admin/' | relative_url }}">Write a post</a></p>
   </footer>
 </body>

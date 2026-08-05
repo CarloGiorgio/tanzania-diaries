@@ -1,0 +1,80 @@
+<!-- Google Translate language switcher. Source language is Italian; the widget
+     rewrites the page in place, so readers never leave the site. If the Google
+     script is blocked, the <noscript>/fallback link opens the translate proxy. -->
+<div class="translate notranslate" translate="no">
+  <label class="translate-label" for="translate-select">🌐</label>
+  <select id="translate-select" class="translate-select" aria-label="Read this page in another language">
+    <option value="it">Italiano (originale)</option>
+    <option value="en">English</option>
+    <option value="es">Español</option>
+    <option value="fr">Français</option>
+    <option value="de">Deutsch</option>
+    <option value="pt">Português</option>
+    <option value="sw">Kiswahili</option>
+  </select>
+  <a class="translate-fallback" hidden href="https://translate.google.com/translate?sl=it&amp;tl=en&amp;u={{ page.url | absolute_url | uri_escape }}" target="_blank" rel="noopener">Translate to English</a>
+</div>
+
+<!-- Hidden host for the Google widget; the visible UI above drives it. -->
+<div id="google_translate_element" aria-hidden="true"></div>
+
+<script>
+(function () {
+  var SOURCE = 'it';
+  var select = document.getElementById('translate-select');
+  var fallback = document.querySelector('.translate-fallback');
+
+  function cookieLang() {
+    var m = document.cookie.match(/(?:^|;\s*)googtrans=([^;]*)/);
+    if (!m) return SOURCE;
+    var parts = decodeURIComponent(m[1]).split('/');
+    return parts[2] || SOURCE;
+  }
+
+  function clearCookie() {
+    var host = location.hostname;
+    var expiry = 'expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
+    document.cookie = 'googtrans=; ' + expiry;
+    document.cookie = 'googtrans=; domain=' + host + '; ' + expiry;
+    document.cookie = 'googtrans=; domain=.' + host + '; ' + expiry;
+  }
+
+  select.value = cookieLang();
+
+  select.addEventListener('change', function () {
+    var lang = select.value;
+    if (lang === SOURCE) {
+      clearCookie();
+      location.reload();
+      return;
+    }
+    var combo = document.querySelector('.goog-te-combo');
+    if (combo) {
+      combo.value = lang;
+      combo.dispatchEvent(new Event('change'));
+    } else {
+      // Widget not ready/blocked: set the cookie Google reads on load and reload.
+      document.cookie = 'googtrans=' + encodeURIComponent('/' + SOURCE + '/' + lang) + '; path=/';
+      location.reload();
+    }
+  });
+
+  window.googleTranslateElementInit = function () {
+    new google.translate.TranslateElement({
+      pageLanguage: SOURCE,
+      autoDisplay: false,
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  };
+
+  var s = document.createElement('script');
+  s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+  s.async = true;
+  s.onerror = function () {
+    select.hidden = true;
+    document.querySelector('.translate-label').hidden = true;
+    if (fallback) fallback.hidden = false;
+  };
+  document.head.appendChild(s);
+})();
+</script>

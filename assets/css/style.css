@@ -475,3 +475,34 @@ a { color: var(--accent); }
   from { transform: translateY(100%); }
   to   { transform: translateY(0); }
 }
+
+/* Language switcher (Google Translate) */
+.translate {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+}
+.translate-label { font-size: 0.95rem; line-height: 1; }
+.translate-select {
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 5px 10px;
+  max-width: 200px;
+}
+.translate-fallback {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Hide Google's injected top banner and the widget host; our select drives it. */
+#google_translate_element { display: none; }
+.skiptranslate { display: none !important; }
+body { top: 0 !important; }
+font[style] { background: none !important; box-shadow: none !important; }
